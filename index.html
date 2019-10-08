@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WebRTC-Projekt</title>
+        <script src="mqtt.min.js"></script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <h1>WebRTC-Projekt</h1>
+        <h4>MQTT</h4>
+        <b>Broker:</b> <input id="mqttAddressInput" type="text" size="30" value="wss://test.mosquitto.org:8081"/>
+        <br/>
+        <b>Topic:</b> aalen/webrtc/<input id="mqttTopicInput" type="text" value="testTopic" />
+        <hr/>
+        <button onclick="buttonWaiter()">Start(Waiter)</button>
+        <button onclick="buttonOfferer()">Start(Offerer)</button>
+        <hr/>
+        <input id="textInput" type="text" /> <button onclick="buttonSend()">Send</button>
+        <ul id="history">
+        </ul>
+        <hr/>
+        <video id="remoteVideo" playsinline autoplay width="40%"></video>
+        <video id="localVideo" playsinline autoplay muted width="20%"></video>
+    </body>
+</html>

@@ -126,7 +126,7 @@ async function startWebRTC(isOfferer) {
         console.log('pc.remoteDescription.type', pc.remoteDescription.type);
         if (pc.remoteDescription.type === 'offer') {
           console.log('Answering offer');
-          pc.createAnswer(localDescriptionCreated, error => appnedMessage(error));
+          pc.createAnswer(localDescriptionCreated, error => appendMessage(error));
         }
       });
     } else if (message.candidate) {

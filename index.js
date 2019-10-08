@@ -122,7 +122,7 @@ async function startWebRTC(isOfferer) {
     console.log(message);
 
     if (message.sdp) {
-      pc.setRemoteDescription(new RTCSessionDescription(message.sdp), () => {
+      pc.setRemoteDescription(new RTCSessionDescription(message.sdp)).then(() => {
         console.log('pc.remoteDescription.type', pc.remoteDescription.type);
         if (pc.remoteDescription.type === 'offer') {
           console.log('Answering offer');

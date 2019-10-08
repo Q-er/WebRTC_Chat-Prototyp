@@ -9,10 +9,10 @@ https://q-er.github.io/WebRTC_Chat-Prototyp
 #### Verwendung
 
 1. MQTT-Broker und Topic auf beiden Peers gleich konfigurieren (oder Standardeinstellungen verwenden)
-2. Waiter starten
-3. Zugriff auf Kamera und Mikrofon gewähren
-4. Offerer starten
-5. Zugriff auf Kamera und Mikrofon gewähren
+2. (Peer A) Waiter starten
+3. (Peer A) Zugriff auf Kamera und Mikrofon gewähren
+4. (Peer B) Offerer starten
+5. (Peer B) Zugriff auf Kamera und Mikrofon gewähren
 
 Daraufhin sollte der Video-Chat gestartet sein.
 
